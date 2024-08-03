@@ -1,0 +1,22 @@
+{
+  "name": "typescript-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "tsc --build",
+    "start": "npm run clean && npm run build && node build/index.js",
+    "startNoClean": "npm run build && node build/index.js",
+    "devStart": "npm run clean && npm run build && node build/index.js --development",
+    "devStartNoClean": "npm run build && node build/index.js --development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "glob": "^11.0.0",
+    "mongoose": "^8.5.1"
+  }
+}
